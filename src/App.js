@@ -40,7 +40,11 @@ class App extends Component {
               <VideoDetail selectedVideo={this.state.selectedVideo}/>
             </Col>
             <Col md='4'>
-              <VideoList />
+              <VideoList>
+                {this.state.videos.map(video => (
+                  <VideoListItem video={video}/>
+                ))}
+              </VideoList>
             </Col>
         </Row>
       </Container>

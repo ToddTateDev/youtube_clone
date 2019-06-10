@@ -3,16 +3,18 @@ import React from 'react';
 
 //Using Named Exports, so i can export both the Components
 //Creating VideoList Component and exporting it
-export const VideoList = () => {
+export const VideoList = props => {
     return (
-        <h2>Video List</h2>
+        <ul>{props.children}</ul>
     )
 }
 
 //Using Named Exports, so i can export both the Components
 //Creating VideoListItem Component and exporting it
-export const VideoListItem = () => {
+export const VideoListItem = ({ video }) => {
     return (
-        <h3>Video List Item</h3>
+        <li>
+            <img src={video.snippet.thumbnails.medium.url} />
+        </li>
     )
 }

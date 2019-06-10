@@ -16,7 +16,8 @@ export default {
                 //Only want to return videos from the search
                 type: 'video',
                 //passing in the apiKey as key
-                key: apiKey
+                key: apiKey,
+                maxResults: 10
             }
         })
     }
