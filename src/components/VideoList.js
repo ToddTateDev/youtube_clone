@@ -14,7 +14,7 @@ export const VideoList = props => {
 export const VideoListItem = ({ video }) => {
     return (
         <li>
-            <img src={video.snippet.thumbnails.medium.url} />
+            <img src={video.snippet.thumbnails.medium.url} alt={video.snippet.title}/>
         </li>
     )
 }
