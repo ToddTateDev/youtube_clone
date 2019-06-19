@@ -4,7 +4,7 @@ import React from 'react'
 //Creating the VideoDetail Component, and pulling props.selectedVideo into the const name selectedVideo
 const VideoDetail = ({ selectedVideo }) => {
     console.log(selectedVideo);
-    if (!selectedVideo) return <h2>Loading Spinner goes here</h2> //Find Loading spinner
+    if (!selectedVideo) return <h2>Loading Spinner goes here</h2>; //Find Loading spinner
 
     const videoId = selectedVideo.id.videoId; 
     const videoURL = `https://www.youtube.com/embed/${videoId}?rel=0`   

@@ -44,7 +44,12 @@ class App extends Component {
               <VideoList>
                 {/* Mapping through the video array stored in state and creating a VideoListItem for each video */}
                 {this.state.videos.map(video => (
-                  <VideoListItem video={video} key={video.id.videoId} id={video.id.videoId}/>
+                  <VideoListItem 
+                      video={video} 
+                      key={video.id.videoId} 
+                      id={video.id.videoId}
+                      selectedVideo={this.state.selectedVideo}  
+                      />
                 ))}
               </VideoList>
             </Col>
